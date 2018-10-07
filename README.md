@@ -1,2 +1,2 @@
 # Java-lessons
-airplane https://github.com/romanbr1/Java_lessons/tree/lesson-7
+airplane https://github.com/romanbr1/Java-Core/tree/lesson-7/src/ua/lviv/lgs
