@@ -41,13 +41,13 @@ public class Application {
 		System.out.println ("Tap 1 to check if such a month exists");
 		System.out.println ("Tap 2, Display all months with the same time of year");
 		System.out.println ("Tap 3 to Print all months with the same number of days");
-		System.out.println ("Quit 4 to display all months with fewer days");
+		System.out.println ("Tap 4 to display all months with fewer days");
 		System.out.println ("Tap 5 to display all the months that have more days");
-		System.out.println ("Tap 6 to display next year");
-		System.out.println ("Tap 7 to display the previous year");
+		System.out.println ("Tap 6 to display next season");
+		System.out.println ("Tap 7 to display previous season");
 		System.out.println ("Tap 8 to display all the months that have a pair of days");
 		System.out.println ("Tap 9 to display all the months that have an odd number of days");
-		System.out.println ("Tap 0 to display the console or the month has a couple of days");
+		System.out.println ("Tap 0 to display the month entered by the console has a couple of days");
 	}
 
 	public static void main(String[] args) {
