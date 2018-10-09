@@ -20,15 +20,15 @@ public class Application2 {
 			double number = Double.parseDouble(br.readLine());
 
 			if (number % 1 == 0) {
-				System.out.println("ціле");
+				System.out.println("whole");
 
 				if (number % 2 == 0) {
-					System.out.println("парне ");
+					System.out.println("couple ");
 				} else {
-					System.out.println("непарне ");
+					System.out.println("odd");
 				}
 			} else {
-				System.out.println("не ціле");
+				System.out.println("not whole");
 			}
 		} catch (NumberFormatException e) {
 			System.out.println("Its not a number");

@@ -38,16 +38,16 @@ public class Application {
 	}
 
 	static void menu() {
-		System.out.println("Натичніть 1, щоб перевірити чи такий місяць існує");
-		System.out.println("Натичніть 2, Вивести всі місяці з такою ж порою року");
-		System.out.println("Натичніть 3, щоб Вивести всі місяці які мають таку саму кількість днів");
-		System.out.println("Натичніть 4, щоб Вивести на екран всі місяці які мають меншу кількість днів");
-		System.out.println("Натичніть 5, щоб Вивести на екран всі місяці які мають більшу кількість днів");
-		System.out.println("Натичніть 6, щоб Вивести на екран наступну пору року");
-		System.out.println("Натичніть 7, щоб Вивести на екран попередню пору року");
-		System.out.println("Натичніть 8, щоб Вивести на екран всі місяці які мають парну кількість днів");
-		System.out.println("Натичніть 9, щоб Вивести на екран всі місяці які мають непарну кількість днів");
-		System.out.println("Натичніть 0, щоб Вивести на екран чи введений з консолі місяць має парну кількість днів");
+		System.out.println ("Tap 1 to check if such a month exists");
+		System.out.println ("Tap 2, Display all months with the same time of year");
+		System.out.println ("Tap 3 to Print all months with the same number of days");
+		System.out.println ("Quit 4 to display all months with fewer days");
+		System.out.println ("Tap 5 to display all the months that have more days");
+		System.out.println ("Tap 6 to display next year");
+		System.out.println ("Tap 7 to display the previous year");
+		System.out.println ("Tap 8 to display all the months that have a pair of days");
+		System.out.println ("Tap 9 to display all the months that have an odd number of days");
+		System.out.println ("Tap 0 to display the console or the month has a couple of days");
 	}
 
 	public static void main(String[] args) {
