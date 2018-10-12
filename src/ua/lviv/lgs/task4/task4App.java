@@ -19,7 +19,7 @@ public class task4App {
 		str.append(s);
 
 		 deleteSpases(str);
-		str.insert(0, ' ');
+		
 
 		System.out.println("Text contain " + countSentences(s) + " sentences");
 	}

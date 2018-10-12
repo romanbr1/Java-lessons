@@ -8,8 +8,8 @@ public class task6App {
 
 //		System.out.println("Write text ");
 		
-		String str = "qwe wer ert qwe qwe qwe rty wer dfgh vc vv ff v        fd dd";
-		str="Lorem Ipsum is simply dummy.. text. of the. Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy "
+		//String str = "qwe wer ert qwe qwe qwe rty wer dfgh vc vv ff v        fd dd";
+		String str="Lorem Ipsum is simply dummy.. text. of the. Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy "
 				+ "text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type. Specimen book. It has "
 				+ "survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised"
 				+ " in the 1960s with the release of. Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software"
@@ -41,7 +41,7 @@ public class task6App {
 				c=wrc;
 				ind=i;
 			};	
-			System.out.println(words[i]+"--"+wrc);	
+			//System.out.println(words[i]+"--"+wrc);	
 			}
 			wrc=1;
 			
