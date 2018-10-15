@@ -10,10 +10,10 @@ public class Application {
 	
 	public static void main(String[] args) {
 		
-//		private static Integer[] array;
+
 		int size1=getRandomValueFromRange(1, 5);
 		int size2=getRandomValueFromRange(1, 5);
-//		array =new Integer[size];
+
 		Car[][] arrayOfCar = new Car[size1][size2];
 		for (int i=0;i<size1;i++) {
 			for (int j=0;j<size2;j++) {
