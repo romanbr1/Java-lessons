@@ -22,7 +22,6 @@ public class Application {
 		}
 		menu();
 
-
 		Scanner sc = new Scanner(System.in);
 		String x = sc.next();
 
@@ -69,7 +68,6 @@ public class Application {
 		System.out.println("Tap 4 to sort desc");
 	}
 
-	
 	public static int getRandomValueFromRange(int min, int max) {
 
 		if (min >= max) {
@@ -125,6 +123,7 @@ class AscendingCarComparartor implements Comparator<Car> {
 	}
 
 }
+
 class DescendingCarComparartor implements Comparator<Car> {
 
 	@Override

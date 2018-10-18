@@ -1,4 +1,5 @@
-package ua.lviv.lgs;
+package ua.lviv.lgs.task2;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -37,13 +38,11 @@ public class Application {
 		}
 	}
 
-	
-
 	public static void main(String[] args) {
-		List<Months> mas= Arrays.asList(Months.values());
-		//Months[] mas = Months.values();
-      List<Seasons> se= Arrays.asList(Seasons.values());
-		//Seasons[] se = Seasons.values();
+		List<Months> mas = Arrays.asList(Months.values());
+		// Months[] mas = Months.values();
+		List<Seasons> se = Arrays.asList(Seasons.values());
+		// Seasons[] se = Seasons.values();
 		Scanner sc = new Scanner(System.in);
 
 		while (true) {
@@ -51,8 +50,8 @@ public class Application {
 
 			switch (sc.next()) {
 			case "0": {
-              	String month=inputMonth();
-              	boolean flag = isMonthsPresent(mas, month);
+				String month = inputMonth();
+				boolean flag = isMonthsPresent(mas, month);
 
 				for (Months m : mas) {
 					if (m.name().equals(month)) {
@@ -72,7 +71,7 @@ public class Application {
 			}
 
 			case "1": {
-				String month=inputMonth();
+				String month = inputMonth();
 				if (!isMonthsPresent(mas, month)) {
 					System.out.println("M4onth doesnt exit");
 				}
@@ -80,8 +79,8 @@ public class Application {
 			}
 
 			case "2": {
-              
-                String season=inputSeason();
+
+				String season = inputSeason();
 				boolean flag = false;
 				for (Months m : mas) {
 					if (m.getSeason().name().equals(season)) {
@@ -146,7 +145,7 @@ public class Application {
 				break;
 			}
 			case "6": {
-				 String season=inputSeason();
+				String season = inputSeason();
 
 				boolean flag = isSeasonPresent(se, season);
 
@@ -158,7 +157,7 @@ public class Application {
 						ordinal = 0;
 						System.out.println(se.get(ordinal));
 					} else {
-						System.out.println(se.get(ordinal+1));
+						System.out.println(se.get(ordinal + 1));
 					}
 				}
 
@@ -168,7 +167,7 @@ public class Application {
 				break;
 			}
 			case "7": {
-				 String season=inputSeason();
+				String season = inputSeason();
 				boolean flag = isSeasonPresent(se, season);
 
 				if (flag) {
@@ -178,7 +177,7 @@ public class Application {
 						ordinal = se.size() - 1;
 						System.out.println(se.get(ordinal));
 					} else {
-						System.out.println(se.get(ordinal-1));
+						System.out.println(se.get(ordinal - 1));
 					}
 				}
 
@@ -236,31 +235,33 @@ public class Application {
 		}
 		return flag;
 	}
-  		private static	String inputMonth(){
-              Scanner sc = new Scanner(System.in);
-              	System.out.println("Enter month");
-				sc = new Scanner(System.in);
-				String monthx = sc.next().toUpperCase();
-                  return monthx;
-                }
-  		private static String inputSeason(){
-  				Scanner sc = new Scanner(System.in);
-  				System.out.println("Enter season");
-				sc = new Scanner(System.in);
-				String season = sc.next().toUpperCase();
-           		return season;
-  		}
-  static void menu() {
-		System.out.println ("Tap 1 to check if such a month exists");
-		System.out.println ("Tap 2, Display all months with the same time of year");
-		System.out.println ("Tap 3 to Print all months with the same number of days");
-		System.out.println ("Tap 4 to display all months with fewer days");
-		System.out.println ("Tap 5 to display all the months that have more days");
-		System.out.println ("Tap 6 to display next season");
-		System.out.println ("Tap 7 to display previous season");
-		System.out.println ("Tap 8 to display all the months that have a pair of days");
-		System.out.println ("Tap 9 to display all the months that have an odd number of days");
-		System.out.println ("Tap 0 to display the month entered by the console has a couple of days");
+
+	private static String inputMonth() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter month");
+		sc = new Scanner(System.in);
+		String monthx = sc.next().toUpperCase();
+		return monthx;
+	}
+
+	private static String inputSeason() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter season");
+		sc = new Scanner(System.in);
+		String season = sc.next().toUpperCase();
+		return season;
+	}
+
+	static void menu() {
+		System.out.println("Tap 1 to check if such a month exists");
+		System.out.println("Tap 2, Display all months with the same time of year");
+		System.out.println("Tap 3 to Print all months with the same number of days");
+		System.out.println("Tap 4 to display all months with fewer days");
+		System.out.println("Tap 5 to display all the months that have more days");
+		System.out.println("Tap 6 to display next season");
+		System.out.println("Tap 7 to display previous season");
+		System.out.println("Tap 8 to display all the months that have a pair of days");
+		System.out.println("Tap 9 to display all the months that have an odd number of days");
+		System.out.println("Tap 0 to display the month entered by the console has a couple of days");
 	}
 }
-
