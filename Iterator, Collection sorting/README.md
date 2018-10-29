@@ -1,1 +1,0 @@
-Verhovna rada
