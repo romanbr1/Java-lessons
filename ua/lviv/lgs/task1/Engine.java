@@ -8,7 +8,6 @@ public int getNumberOfCylinders() {
 }
 
 public Engine(int numberOfCylinders) {
-	super();
 	this.numberOfCylinders = numberOfCylinders;
 }
 
