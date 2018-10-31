@@ -13,7 +13,7 @@ public class Main {
 
 		numlist.add(new Integer("34")); // виконується метод parseInt, як видно з Exception-а нижче
 
-//      numlist.add(new Integer("45q"));
+//      numlist.add(new Integer("45q"));  // помилка компіляції
 		
 //      Exception in thread "main" java.lang.NumberFormatException: For input string: "45q"
 //    	at java.lang.NumberFormatException.forInputString(Unknown Source)
