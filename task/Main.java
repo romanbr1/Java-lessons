@@ -19,7 +19,7 @@ public class Main {
 //    	at java.lang.NumberFormatException.forInputString(Unknown Source)
 //    	at java.lang.Integer.parseInt(Unknown Source)
 //    	at java.lang.Integer.<init>(Unknown Source)
-//    	at qwbg.Main.main(Main.java:13)
+//    	at qwbg.Main.main(Main.java:16)
 
 		System.out.println(numlist);
 		// ---> [123, 34]
