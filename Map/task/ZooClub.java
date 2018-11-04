@@ -84,11 +84,9 @@ public class ZooClub {
 				flag1 = false;
 				System.out.println("Enter pet's type");
 				String atype = sc.nextLine();
-				// List<Animal> groupAnimals = next.getValue();
 				Iterator<Animal> iterator2 = next.getValue().iterator();
 				while (iterator2.hasNext()) {
 					Animal next2 = iterator2.next();
-					// System.out.println(next2.getNameAn());
 					if (next2.getType().equalsIgnoreCase(atype)) {
 						iterator2.remove();
 						flag2 = false;
