@@ -6,7 +6,7 @@ public class ApplicationBasic {
 	public static void main(String[] args) throws InterruptedException {
 		MyThread myThread = new MyThread(1000);
 		myThread.start();
-		myThread.join();
+		//myThread.join();
 		RunnableThread runnableThread = new RunnableThread(1000);
 	}
 }
