@@ -8,16 +8,12 @@ public class application {
 		Cow cow = new Cow();
 		Cat cat = new Cat();
 	
-		Pet pet = message -> System.out.println(message);
-	
-		pet.print(dog.voice());
-		pet.print(cow.voice());
-		pet.print(cat.voice());
-
+		Pet dogsay = () -> System.out.println(dog.voice());
+		dogsay.print();
+		Pet catsay = () -> System.out.println(cat.voice());
+		catsay.print();
+		Pet cawsay = () -> System.out.println(cow.voice());
+		cawsay.print();
 	}
 
-}
-
-interface Pet {
-void print(String msg);
 }
