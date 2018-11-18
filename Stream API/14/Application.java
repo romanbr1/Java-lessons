@@ -18,7 +18,7 @@ public class Application {
 		System.out.println();
 		System.out.println("Comparator ------Aplhabet sorting  (All fields)");
 
-		Comparator<Book> sortByBrandsTitleAndPrice = (c1, c2) -> {
+		Comparator<Book> sortByTitleAndPrice = (c1, c2) -> {
 			if (c1.getTitle().compareTo(c2.getTitle()) != 0) {
 				return c1.getTitle().compareTo(c2.getTitle());
 			} else if (c1.getCost() > c2.getCost()) {
@@ -28,7 +28,7 @@ public class Application {
 			}
 			return 0;
 		};
-		st.stream().sorted(sortByBrandsTitleAndPrice).forEach(System.out::println);
+		st.stream().sorted(sortByTitleAndPrice).forEach(System.out::println);
 
 		System.out.println();
 		System.out.println("Comparable ------By cost");
