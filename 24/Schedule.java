@@ -1,12 +1,14 @@
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 
 
 
 public class Schedule {
-	private Set<Seance> schedule = new HashSet<Seance>(); 
+	private Set<Seance> schedule; 
 	public Schedule() {
+		this.schedule = new TreeSet<>();
 	}
 
 	public Set<Seance> getSchedule() {
